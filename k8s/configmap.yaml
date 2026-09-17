@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: k8s-demo-app-config
+  labels:
+    app: k8s-demo-app
+data:
+  APP_ENV: "production"
+  MAX_KEYS: "1000"
+  GREETING: "Hello from the Kubernetes Demo App"
